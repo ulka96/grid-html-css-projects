@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #F7F4FF;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #281A51;
+}
+
+
+.card {
+    width: 650px;
+    height: 464px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.backdrop {
+    position: absolute;
+    width: 450px;
+    height: 664px;
+    left: 100px;
+    top: -100px;
+    z-index: -1;
+    background-color: #DDD6FF;
+    border-radius: 10px;
+}
+
+
+.search-section {
+    display: flex;
+    margin: 64px 64px 24px 64px;
+    gap: 8px;
+
+}
+
+form {
+    gap: 17px;
+    border: 1px solid #D4D4D4;
+    border-radius: 4px;
+    padding: 16px 0 16px;
+    width: 370px;
+    display: flex;
+}
+
+form button {
+    padding-left: 16px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #888888;
+    font-family: inherit;
+}
+
+form input {
+    border: none;
+    color: #888888;
+    font-family: inherit;
+}
+
+form ::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    color: #888888;
+}
+
+
+.btn {
+    background-color: #281A51;
+    color: #FFFFFF;
+    border: 1px solid #281A51;
+    border-radius: 4px;
+    border: none;
+    padding: 16px 6px 16px;
+    width: 144px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.btn p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    color: #FFFFFF;
+}
+
+
+.sections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 124px);
+    margin: 0 64px;
+    gap: 8px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #9CA3AF;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+.section p {
+    font-size: 16px;
+    font-weight: 500;
+}
