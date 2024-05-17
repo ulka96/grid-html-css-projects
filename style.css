@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Poppins",sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #FFFFFF;
+    margin: 40px 16px 71px;
+    padding: 64px 24px;
+    border: 1px solid #4B5563;
+    border-radius: 10px;
+
+}
+
+.card-info {
+
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.info-1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.info-2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4B5563;
+}
+
+
+.boxes {
+    display: grid;
+    /* grid-template-columns: 135px; */
+    grid-template-rows: repeat(4, 135px);
+    text-align: center;
+    gap: 4px;
+    margin-top: 64px;
+
+
+}
+
+.boxes .box {
+    background-color: #F5F5F5;
+    padding: 32px 0;
+    gap: 5px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.box-4 {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.boxes p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4B5563;
+}
+
+
+
+@media screen and (min-width: 834px) {
+
+    .card {
+       
+        margin: 150px 80px;
+        padding: 128px 30px;
+      
+    }
+    
+    .info-1 {
+        font-size: 36px;
+      }
+      
+      .boxes {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 135px);
+    
+    }
+
+    .boxes .box {
+      
+        padding: 32px 0;
+    
+    }
+
+    .box-1 {
+        border-top-left-radius: 6px;
+    }
+
+    .box-2 {
+        border-top-right-radius: 6px;
+    }
+
+    .box-3 {
+        border-bottom-left-radius: 6px;
+    }
+
+    .box-4 {
+        border-bottom-right-radius: 6px;
+    }  
+}
+
+@media screen and (min-width: 1280px) {
+    .card {
+        margin: 150px 80px;
+        padding: 128px 40px;
+        width: 100%;
+      
+    }
+    
+    .info-1 {
+        font-size: 36px;
+      }
+
+      .boxes {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 135px;
+    
+    }
+
+    .boxes .box {
+        padding: 32px 0;
+    
+    }
+
+    .box-1 {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    .box-4 {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+}
